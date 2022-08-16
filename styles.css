@@ -1,0 +1,197 @@
+.firstsection-paragraph {
+  width: 80%;
+  margin: 0px 25%;
+  margin-top: 150px;
+}
+.firstsection-paragraph > #one {
+  width: 551px;
+  height: 144px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 112%;
+  color: #1a1a1a;
+}
+.firstsection-paragraph > #two {
+  width: 390px;
+  height: 55px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  /* or 26px */
+  color: #13254a;
+}
+.firstsection-paragraph > div {
+  width: 100%;
+}
+.firstsection-paragraph > div > button {
+  height: 54px;
+  width: 325px;
+  left: 156px;
+  top: 584px;
+  border-radius: 30px;
+  border: none;
+  padding: 0px, 16px, 0px, 16px;
+  background: #da3743;
+}
+/* Beginning of second section food menu */
+.food-menu {
+  background: #fafafa;
+  /* position: absolute; */
+  /* width: 1440px; */
+  width: 100%;
+  height: 1407px;
+  left: 0px;
+}
+.second-section-food-menu {
+  width: 70%;
+  margin: 2% 10%;
+  margin-bottom: 0%;
+}
+.second-section-food-menu > .foods {
+  /* margin: 0xp 50% !important; */
+  /* width: 100%!important; */
+}
+.food-menu-button {
+  /* width: 100%;
+  background-color: red; */
+}
+.food-menu-button > button {
+  margin-top: 2px;
+  text-align: center;
+  position: absolute;
+  width: 119px;
+  height: 54px;
+  left: 670px;
+  /* top: 1101px; */
+  background: #da3743;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+}
+/* Beginning of third section what our customer say */
+
+.third-section {
+  position: absolute;
+  width: 100%;
+  height: 597px;
+  left: 2px;
+  margin-top: -20%; /* watch this to know if it is not neccesary*/
+  background: rgba(218, 55, 67, 0.15);
+}
+#third-section-paragraph1 {
+  position: absolute;
+  width: 360px;
+  height: 156px;
+  left: 156px;
+  top: calc(50% - 156px / 2 - 89.5px);
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 124%;
+  color: #363a40;
+}
+#third-section-paragraph2 {
+  position: absolute;
+  width: 286px;
+  height: 78px;
+  left: 156px;
+  top: calc(50% - 78px / 2 + 47.5px);
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.004em;
+  color: #67758d;
+}
+.third-section-img > img {
+  position: absolute;
+  height: 337px;
+  left: -0.31%;
+  right: 0%;
+  top: calc(50% - 337px / 2);
+  background: #ffffff;
+  box-shadow: 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+  border-radius: 12px;
+}
+/* Beginning of fourth section Blog Our Latest News */
+.fourth-section {
+  /* position: absolute; */
+  width: 100%;
+  height: 597px;
+  margin-top: 650px;
+}
+#fourth-section-paragraph1 {
+  position: absolute;
+  width: 361px;
+  height: 45px;
+  left: 541.33px;
+  margin-top: 10px !important;
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37.9px;
+  line-height: 120%;
+  color: #030303;
+}
+#fourth-section-paragraph2 {
+  position: absolute;
+  width: 420.99px;
+  height: 52px;
+  left: 509.63px;
+  margin-top: 80px !important;
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #0a244e;
+  opacity: 0.7;
+}
+.fourth-section-rows {
+  /* margin-top: 450px !important; */
+}
+#fourth-section-paragraph {
+  margin-top: 450px !important;
+}
+.Blog {
+  box-sizing: border-box;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: flex-start; */
+  padding: 1px 0px;
+  gap: 10px;
+
+  width: 360px;
+  height: 472px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.Blog-text {
+  /* width: 100%;
+    margin: 0px 10px; */
+}
+/* .Blog-text > p {
+
+} */
+.Blog-text > p > span {
+  font-family: "Lato";
+  font-style: normal;
+  /* font-weight: 400; */
+  /* font-size: 12px; */
+  line-height: 160%;
+  color: #da3743;
+}
