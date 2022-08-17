@@ -19,14 +19,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav.css" />
     <title>Bezao</title>
   </head>
   <body>
     <div>
-      <!-- NavBar -->
+      <!-- Nav Bar -->
+      <section class="container;" style="width: 100%; box-shadow: 1px 1px 1px 1px rgb(205, 213, 215);">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+         <div style="width: 30%;">
+          <a class="navbar-brand" href="#" style="width: 20%; margin: 0px 35%;" >
+            <img src="images/logo.png" alt="" />
+            <img src="images/logo2.png" alt="" />
+          </a>
+         </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto topnav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meal Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/search.png" alt="">
+                </a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Carfax</a>
+                  <a class="dropdown-item" href="#">Carproof</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Omnivic</a>
+                </div>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/cart.png" alt="">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign In</a>
+              </li>
+              <li class="nav-item" style="display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 0px 24px;
+              gap: 16px;            
+              background: #DA3743;
+              border-radius: 30px;
+              ">
+                <a
+                  class="nav-link  text-white"
+                  type="button"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  >Create Account</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Customer Sign In</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    ×
+                  </button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form>
+                    <label class="sr-only" for="usrname">Username</label>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fa fa-user"></i
+                        ></span>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Username"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                      />
+                    </div>
+
+                    <label class="sr-only" for="Password">Name</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon2"
+                          ><i class="fa fa-key"></i
+                        ></span>
+                      </div>
+                      <input
+                        id="Password"
+                        type="password"
+                        class="form-control"
+                        placeholder="Password"
+                        aria-label="Password"
+                        aria-describedby="basic-addon2"
+                      />
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Sign In</button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- END NavBar -->
       <section class="container-fluid">
         <div class="row">
-          <div class="col-sm bg-success">
+          <div class="col-sm-6">
             <div class="firstsection-paragraph">
               <p id="one">Delicious meals at your convenience</p>
               <p id="two">
@@ -38,7 +192,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm bg-warning">
+          <div class="col-sm-6">
             <div>
               <img src="images/image 5.png" />
             </div>
@@ -51,83 +205,146 @@
 
       <!-- Beginning of second section food menu -->
       <div class="food-menu">
-        <div>
-          <p>Menu</p>
+        <div style="width: 50%; margin: 0px 11%">
+          <p style="padding: 10px 0%; color: red">Menu</p>
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-6 bg-success">
-              <p>Current menu</p>
+            <div class="col-sm-6">
+              <div style="width: 50%; margin: 0px 20%">
+                <p
+                  style="
+                    width: 778px;
+                    height: 52px;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 42px;
+                    line-height: 124%;
+                    color: #041210;
+                  "
+                >
+                  Current menu
+                </p>
+              </div>
             </div>
-            <div class="col-sm-6 bg-success">
-              <ul>
-                <li>all</li>
-              </ul>
+            <div class="col-sm-6">
+              <div style="width: 70%; margin: 0px 25%">
+                <p style="padding-top: 5%">
+                  <span
+                    style="
+                      padding: 10px 2%;
+                      justify-content: center;
+                      align-items: center;
+                      background: #da3743;
+                      border-radius: 8px;
+                      width: 17px;
+                    "
+                  >
+                    All
+                  </span>
+                  <span style="padding: 10px 2%"> Rice </span>
+                  <span style="padding: 10px 2%"> Beans </span>
+                  <span style="padding: 10px 2%"> Fries </span>
+                  <span style="padding: 10px 2%"> Swallow </span>
+                  <span style="padding: 10px 2%"> Others </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
-        <section class="container-fluid">
-          <div class="row second-section-food-menu">
-            <div class="col-sm-4 foods">
-              <img src="images/Rectangle 82.png" alt="" />
-              <p>Jollof Rice and Chicken</p>
-              <p>
-                Fried potato/yam chips with egg sauce or any topping of your
-                choice
-              </p>
-              <p>₦ 1,500</p>
+        <section class="container-fluid second-section">
+          <div class="row second-section-rows">
+            <div class="col-sm-4">
+              <div class="Blog">
+                <img src="images/Rectangle 82.png" alt="" />
+                <div class="Blog-text">
+                  <p style="font-weight: bold; margin-top: 35px">
+                    Jollof Rice and Chicken
+                  </p>
+                  <p>
+                    Fried potato/yam chips with egg sauce or any topping of your
+                    choice
+                  </p>
+                  <p style="font-weight: bold">₦ 1,500</p>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-4 foods">
-              <img src="images/Rectangle 82 (1).png" alt="" />
-              <p>Jollof Rice and Chicken</p>
-              <p>
-                Fried potato/yam chips with egg sauce or any topping of your
-                choice
-              </p>
-              <p>₦ 1,500</p>
+            <div class="col-sm-4">
+              <div class="Blog">
+                <img src="images/Rectangle 82 (1).png" alt="" />
+                <div class="Blog-text">
+                  <p style="font-weight: bold; margin-top: 35px">
+                    Swallow with Draw Soup
+                  </p>
+                  <p>
+                    Fried potato/yam chips with egg sauce or any topping of your
+                    choice
+                  </p>
+                  <p style="font-weight: bold">₦ 1000</p>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-4 foods">
-              <img src="images/Rectangle 82 (2).png" alt="" />
-              <p>Jollof Rice and Chicken</p>
-              <p>
-                Fried potato/yam chips with egg sauce or any topping of your
-                choice
-              </p>
-              <p>₦ 1,500</p>
+            <div class="col-sm-4">
+              <div class="Blog">
+                <img src="images/Rectangle 82 (2).png" alt="" />
+                <div class="Blog-text">
+                  <p style="font-weight: bold; margin-top: 35px">
+                    Fries with Egg sauce
+                  </p>
+                  <p>
+                    Fried potato/yam chips with egg sauce or any topping of your
+                    choice
+                  </p>
+                  <p style="font-weight: bold">₦ 1,500</p>
+                </div>
+              </div>
             </div>
           </div>
+          <!--  -->
+          <div class="row second-section-rows">
+            <div class="col-sm-4">
+              <div class="Blog">
+                <img src="images/Rectangle 82 (3).png" alt="" />
+                <div class="Blog-text">
+                  <p style="font-weight: bold; margin-top: 35px">
+                    Swallow with Egusi Soup
+                  </p>
+                  <p>Nicely cooked egusi soup and eba</p>
+                  <p style="font-weight: bold">₦ 1000</p>
+                </div>
+              </div>
+            </div>
 
-          <div class="row second-section-food-menu">
-            <div class="col-sm-4 foods foods">
-              <img src="images/Rectangle 82 (3).png" alt="" />
-              <p>Jollof Rice and Chicken</p>
-              <p>
-                Fried potato/yam chips with egg sauce or any topping of your
-                choice
-              </p>
-              <p>₦ 1,500</p>
+            <div class="col-sm-4">
+              <div class="Blog">
+                <img src="images/Rectangle 82 (4).png" alt="" />
+                <div class="Blog-text">
+                  <p style="font-weight: bold; margin-top: 35px">Beans</p>
+                  <p>
+                    Fried potato/yam chips with egg sauce or any topping of your
+                    choice
+                  </p>
+                  <p style="font-weight: bold">₦ 700</p>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-4 foods">
-              <img src="images/Rectangle 82 (4).png" alt="" />
-              <p>Jollof Rice and Chicken</p>
-              <p>
-                Fried potato/yam chips with egg sauce or any topping of your
-                choice
-              </p>
-              <p>₦ 1,500</p>
-            </div>
-            <div class="col-sm-4 foods">
-              <img src="images/Rectangle 82 (5).png" alt="" />
-              <p>Jollof Rice and Chicken</p>
-              <p>
-                Fried potato/yam chips with egg sauce or any topping of your
-                choice
-              </p>
-              <p>₦ 1,500</p>
+            <div class="col-sm-4">
+              <div class="Blog">
+                <img src="images/Rectangle 82 (5).png" alt="" />
+                <div class="Blog-text">
+                  <p style="font-weight: bold; margin-top: 35px">Fried Rice</p>
+                  <p>
+                    Fried potato/yam chips with egg sauce or any topping of your
+                    choice
+                  </p>
+                  <p style="font-weight: bold">₦ 600</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+
         <div class="food-menu-button">
           <button>Full Menu</button>
         </div>
@@ -162,28 +379,45 @@
             <div class="Blog">
               <img src="images/Rectangle 69.png" alt="" />
               <div class="Blog-text">
-                <p><span>Design</span> 01 October 2019</p>
-              <p>Better Than Takeout Kung Pao Chicken</p>
-              <p>
-                This spicy, tangy, and sweet better than takeout no peanut kung
-                pao chicken stir fry recipe
-              </p>
-              <p>READ MORE</p>
+                <p>
+                  <span style="color: red">Design</span>
+                  <span style="color: black; margin-left: 15px"
+                    >01 October 2019</span
+                  >
+                </p>
+                <p style="font-weight: bold">
+                  Better Than Takeout Kung Pao Chicken
+                </p>
+                <p>
+                  This spicy, tangy, and sweet better than takeout no peanut
+                  kung pao chicken stir fry recipe
+                </p>
+                <a href="#" style="text-decoration: none"
+                  ><p style="color: red">READ MORE</p></a
+                >
               </div>
-
             </div>
           </div>
           <div class="col-sm-4">
             <div class="Blog">
               <img src="images/Rectangle 70.png" alt="" />
               <div class="Blog-text">
-               <p><span>Design</span> 01 October 2019</p>
-              <p>The Best Sesame Soy Broccoli Salad</p>
-              <p>
-                Hello broccoli salad! Broccoli salad with a sweet and tangy
-                dressing is my new go to for summer parties.
-              </p>
-              <p>READ MORE</p>
+                <p>
+                  <span style="color: red">Design</span>
+                  <span style="color: black; margin-left: 15px"
+                    >01 October 2019</span
+                  >
+                </p>
+                <p style="font-weight: bold">
+                  The Best Sesame Soy Broccoli Salad
+                </p>
+                <p>
+                  Hello broccoli salad! Broccoli salad with a sweet and tangy
+                  dressing is my new go to for summer parties.
+                </p>
+                <a href="#" style="text-decoration: none"
+                  ><p style="color: red">READ MORE</p></a
+                >
               </div>
             </div>
           </div>
@@ -191,20 +425,90 @@
             <div class="Blog">
               <img src="images/Rectangle 71.png" alt="" />
               <div class="Blog-text">
-                <p><span>Design</span> 01 October 2019</p>
-              <p>Better Than Takeout Kung Pao Chicken</p>
-              <p>
-                This super easy version of dan dan noodles is fast, flavorful,
-                and vegetarian to boot. It’s definitely
-              </p>
-              <p>READ MORE</p>
+                <p>
+                  <span style="color: red">Design</span>
+                  <span style="color: black; margin-left: 15px"
+                    >01 October 2019</span
+                  >
+                </p>
+                <p style="font-weight: bold">
+                  Better Than Takeout Kung Pao Chicken
+                </p>
+                <p>
+                  This super easy version of dan dan noodles is fast, flavorful,
+                  and vegetarian to boot. It’s definitely
+                </p>
+                <a href="#" style="text-decoration: none"
+                  ><p style="color: red">READ MORE</p></a
+                >
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section></section>
-      <section></section>
+
+      <!--Beginning of fifth section footer -->
+      <section class="container-fluid fifth-section">
+        <div class="row">
+          <div class="col-lg-6">
+            <div style="display: float; margin: 150px 250px">
+              <img src="images/logo.png" alt="" />
+              <img src="images/logo2.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="row fifth-section-row2"
+              style="width: 70%; margin: 0px 20px"
+            >
+              <div class="col-sm-6">
+                <p style="font-weight: bold">Company</p>
+                <p>Blog</p>
+                <p>About us</p>
+                <p>Contact us</p>
+              </div>
+              <div class="col-sm-6">
+                <p style="font-weight: bold">Services</p>
+                <p>FAQs</p>
+                <p>Our Menu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <br /><br />
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <div style="width: 70%; margin: 0px 10%">
+                <p style="text-align: center">
+                  © 2022 Meals. All rights reserved.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div style="width: 20%; margin: 0px 70%">
+                <a href="#"
+                  ><img
+                    src="images/facebook.png"
+                    alt=""
+                    style="margin: 0px 10%"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="images/instagram.png"
+                    alt=""
+                    style="margin: 0px 10%"
+                /></a>
+                <a href="#"
+                  ><img src="images/twitter.png" alt="" style="margin: 0px 10%"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br /><br />
+      </section>
     </div>
   </body>
 </html>

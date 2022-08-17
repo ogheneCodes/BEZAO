@@ -36,6 +36,7 @@
   border: none;
   padding: 0px, 16px, 0px, 16px;
   background: #da3743;
+  color: white;
 }
 /* Beginning of second section food menu */
 .food-menu {
@@ -47,9 +48,23 @@
   left: 0px;
 }
 .second-section-food-menu {
-  width: 70%;
+  /* width: 70%;
   margin: 2% 10%;
-  margin-bottom: 0%;
+  margin-bottom: 0%; */
+
+  /* width: 80%;
+  height: 597px;
+  margin: 0xp 50px;
+  margin-top: 650px; */
+}
+.second-section{
+  width: 80%;
+  margin: 0xp 50px;
+  /* margin-top: 650px; */
+}
+.second-section-rows > .col-sm-4{
+  margin: 20px 0px;
+  /* box-shadow: 10px 10px 5px 12px rgb(205, 213, 215); */
 }
 .second-section-food-menu > .foods {
   /* margin: 0xp 50% !important; */
@@ -60,7 +75,7 @@
   background-color: red; */
 }
 .food-menu-button > button {
-  margin-top: 2px;
+  margin: 70px 0px;
   text-align: center;
   position: absolute;
   width: 119px;
@@ -79,7 +94,7 @@
   width: 100%;
   height: 597px;
   left: 2px;
-  margin-top: -20%; /* watch this to know if it is not neccesary*/
+  /* margin-top: %; watch this to know if it is not neccesary */
   background: rgba(218, 55, 67, 0.15);
 }
 #third-section-paragraph1 {
@@ -123,9 +138,11 @@
 /* Beginning of fourth section Blog Our Latest News */
 .fourth-section {
   /* position: absolute; */
-  width: 100%;
+  width: 80%;
   height: 597px;
-  margin-top: 650px;
+  /* margin: 10xp 50px; */
+  margin-top: 850px;
+  
 }
 #fourth-section-paragraph1 {
   position: absolute;
@@ -159,7 +176,7 @@
   /* margin-top: 450px !important; */
 }
 #fourth-section-paragraph {
-  margin-top: 450px !important;
+  margin-top: 650px !important;
 }
 .Blog {
   box-sizing: border-box;
@@ -181,17 +198,26 @@
   flex-grow: 0;
 }
 .Blog-text {
-  /* width: 100%;
-    margin: 0px 10px; */
+  margin-left: 25px;
 }
-/* .Blog-text > p {
 
-} */
-.Blog-text > p > span {
-  font-family: "Lato";
-  font-style: normal;
-  /* font-weight: 400; */
-  /* font-size: 12px; */
-  line-height: 160%;
-  color: #da3743;
+
+/* Beginning of fifth section footer */
+.fifth-section {
+ margin-top: 120px;
+  background: #fafafa !important;
+}
+.fifth-section-row2 {
+  margin-top: 150px !important;
+}
+hr {
+  /* position: absolute; */
+  width: 1128px;
+  /* height: 1px; */
+  left: 156px;
+  /* top: 336px; */
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  border: 1px solid #b3b3b3;
+  background-color: black;
 }
