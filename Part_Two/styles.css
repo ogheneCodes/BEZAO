@@ -1,12 +1,13 @@
-#bg {
-  /* background-image: url("/Part_Two/noodle_PNG77\ 2.png"); */
-  /* position: absolute; */
-  /* width: 2192px; */
+.bg {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   /* height: 2195px; */
-  /* left: 1828px; */
-  /* top: -614px; */
-
-  /* background: url('/Part_Two/noodle_PNG77\ 2.png'); */
-  /* filter: blur(19px); */
-  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+  background: url('/Part_Two/noodle_PNG77\ 2.png');
+  background-repeat: no-repeat;
+  background-color: hsl(41, 100%, 55%) ;
+  margin-bottom: 0px;
+  padding-bottom: 0%;
 }
+
+/* Todo */
+

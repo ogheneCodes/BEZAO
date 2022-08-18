@@ -21,43 +21,148 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/Part_Two/styles.css" />
+    <link rel="stylesheet" href="/Part_Two/admin.css" />
     <title>Part_Two</title>
   </head>
   <body>
-    <div id="bg">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 col-md-3 bg-success">
-            <div>
-                p
-                <!-- <p style="padding: 0px 0px; margin: 0px 0%;                
-               
-                color: #FFFFFF">Enjoy</p>
-                <p style="padding: 0px 0px; margin: 0px 0%; color: #FFFFFF">Delicious</p>
-                <p style="padding: 0px 0px; margin: 0px 0%; color: #FFFFFF">Meals</p>
-                </div> -->
-            </div>
+    <div class="container-fluid bg">
+      <!-- NavBar -->
+      <section
+        class="container;"
+        style="width: 100%; box-shadow: 1px 1px 1px 1px rgb(205, 213, 215)"
+      >
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div style="width: 30%">
+            <a
+              class="navbar-brand"
+              href="/index.html"
+              style="width: 20%; margin: 0px 35%"
+            >
+              <img src="/Part_Two/C.png" alt="" />
+              <img src="/Part_Two/O.png" alt="" />
+              <img src="/Part_Two/K.png" alt="" />
+              <img src="/Part_Two/S.png" alt="" />
+            </a>
           </div>
-          <div class="col-sm-12 col-md-6 bg-warning">
-           <div>
-            p
-            <!-- <img src="/Part_Two/noodle_PNG77 2.png" alt=""> -->
-           </div>
-        </div>
-          <div class="col-sm-12 col-md-3 bg-primary">
           <div>
-            p
+            <label for="new-task">Add Food and Price Together in Naira(₦)</label><input id="new-task" type="text"><br>
+            <button class="add-button">Add</button>
+          </div>          
+        </nav>
+      </section>
+      <!-- EndNavBar -->
+      <div class="row">
+        <div class="col-md-3">
+          <div
+            style="width: 70%; margin: 0px 25%; margin-top: 120px; color: white"
+          >
+            <p
+              style="
+                width: 329.63px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 64px;
+                line-height: 77px;
+                letter-spacing: 0.015em;
+              "
+            >
+              Enjoy
+            </p>
+            <p
+              style="
+                width: 329.63px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 64px;
+                line-height: 77px;
+                letter-spacing: 0.015em;
+              "
+            >
+              Delicious
+            </p>
+            <p
+              style="
+                width: 329.63px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 64px;
+                line-height: 77px;
+                letter-spacing: 0.015em;
+              "
+            >
+              Meals
+            </p>
+            <p>Meals delivered to your doorstep.</p>
           </div>
         </div>
+        <div class="col-md-5">
+          <div style="width: 100%; margin: 10px 50px">
+            <img
+              src="/Part_Two/noodle_PNG77 1.png"
+              alt=""
+              style="
+                width: 70%;
+                margin: 2% 10%;
+                border-radius: 100%;
+                border: 50px solid hsl(49, 100%, 55%);
+              "
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Todo List -->
+          <div class="container" style="margin: 0px;">
+            <p>
+              <!-- <label for="new-task">Add Food and Price Together in Naira(₦)</label><input id="new-task" type="text"><button
+                class="add-button">Add</button> -->
+            </p>
+        
+            <h3>Food Items</h3>
+            <ul id="incomplete-tasks">
+              <li><input type="checkbox"><label>Okpa (₦100)</label><input type="text"><button class="edit">Edit</button><button
+                  class="delete">Delete</button></li>
+              <li class="editMode"><input type="checkbox"><label>Amala (₦350)</label><input type="text"
+                  value="Yam (₦100)"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        
+            </ul>
+        
+            <h3>Available Food Item</h3>
+            <ul id="completed-tasks">
+              <li><input type="checkbox" checked><label>Eba (₦200)</label><input type="text"><button
+                  class="edit">Edit</button><button class="delete">Delete</button></li>
+            </ul>
+          </div>
         </div>
       </div>
+      <section class="container-fluid">
+        <footer class="row" style="color: white">
+          <div class="col-sm-12 col-md-4">
+            <div style="width: 60%; margin: 0px 25%; margin-top: 35px">
+              <p style="margin: 0px 0%">Price</p>
+              <p style="margin: 0px 0%">N3000</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <p style="margin: 0px 0%">Tasty Soup</p>
+            <p style="margin: 0px 0%">
+              Rice noodles, soy sauce, hoisin, chili garlic sauce, honey
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div style="width: 30%; margin: 0px 50%; margin-top: 35px">
+              <p style="margin: 0px 0%">preparation</p>
+              <p style="margin: 0px 0%">20 mins</p>
+            </div>
+          </div>
+        </footer>
+      </section>
     </div>
-    <!-- /* font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 77px;
-    letter-spacing: 0.015em; */ -->
+    <!--body-->
+    <script src="/Part_Two/index.js"></script>
+    <!-- <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
   </body>
 </html>
